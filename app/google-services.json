@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "544532718381",
+    "project_id": "group-chat-bc758",
+    "storage_bucket": "group-chat-bc758.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544532718381:android:22e33d35acf1afc7d8a9a4",
+        "android_client_info": {
+          "package_name": "com.example.groupchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544532718381-m30fup2ikf9hsohpspld6tejcggjm2jj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.groupchat",
+            "certificate_hash": "46b3de4c21665c58063aad0619e90ec0acb8bafa"
+          }
+        },
+        {
+          "client_id": "544532718381-bpebekjaonedc777eot6438kuk1ccfdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbZ33y13HRW2ARPx3Xod0YhkUovelgsPs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544532718381-bpebekjaonedc777eot6438kuk1ccfdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

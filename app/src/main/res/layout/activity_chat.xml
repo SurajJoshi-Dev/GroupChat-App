@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Chat">
+
+    <include
+        android:id="@+id/chat_toolbar"
+        layout="@layout/toolbar_layout"
+        >
+    </include>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Pvt_Message_list_of_users"
+    android:layout_below="@+id/chat_toolbar"
+    android:layout_above="@id/chat_con_Layout"
+    >
+
+
+</androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chat_con_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <EditText
+            android:id="@+id/input_message"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/inputs"
+            android:backgroundTint="@color/white"
+            android:hint="write your message here..."
+            android:padding="15dp"
+            android:textColorHint="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintRight_toLeftOf="@+id/send_message_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:layout_editor_absoluteX="3dp" />
+
+        <ImageButton
+            android:id="@+id/send_message_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_green_dark"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_send_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/input_message"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
